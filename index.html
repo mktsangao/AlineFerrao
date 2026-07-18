@@ -344,7 +344,7 @@
             <p class="font-sans text-xs text-aline-cream/70 mb-5">Aponte a câmera do celular para ler</p>
             
             <!-- Dynamic QR Code based on URL -->
-            <div class="bg-white p-3 rounded-xl border border-aline-gold/20 shadow-sm w-44 h-44 flex items-center justify-center mb-6">
+            <div class="bg-white p-3 rounded-xl border border-aline-gold/20 shadow-sm w-56 h-56 flex items-center justify-center mb-6">
                 <img id="share-qr-img" src="" class="w-full h-full object-contain" alt="QR Code Compartilhar">
             </div>
             
@@ -409,7 +409,7 @@
             
             // Set the dynamic URL for the QR code
             const currentUrl = window.location.href;
-            qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=${encodeURIComponent(currentUrl)}`;
+            qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=${encodeURIComponent(currentUrl)}`;
             
             modal.classList.remove('opacity-0', 'pointer-events-none');
             modal.classList.add('opacity-100');
