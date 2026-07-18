@@ -481,7 +481,9 @@ TEL;TYPE=CELL,VOICE;MSG=true:${configData.telefone}\n`;
                     vcard += `EMAIL;TYPE=PREF,INTERNET:${configData.email}\n`;
                 }
 
-                vcard += `URL:${configData.site}
+                vcard += `URL;type=WORK:${configData.site}
+URL;type=INSTAGRAM:https://www.instagram.com/alineferrao_terapeuta/
+X-SOCIALPROFILE;type=instagram:https://www.instagram.com/alineferrao_terapeuta/
 PHOTO;TYPE=JPEG;ENCODING=b:${profilePhotoBase64}
 NOTE:${configData.note}
 END:VCARD`;
