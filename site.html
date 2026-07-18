@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Aline Ferrão | Site Oficial & Eventos</title>
+    <!-- Google Fonts: Playfair Display, Syne & DM Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS v3 -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'aline-gold': '#E5A93B',
+                'aline-purple': '#7F4CA5',
+                'aline-dark': '#0F0712',
+                'aline-cream': '#F4EFEA',
+                'aline-surface': '#190F1E',
+              },
+              fontFamily: {
+                serif: ['Playfair Display', 'serif'],
+                sans: ['DM Sans', 'sans-serif'],
+                display: ['Syne', 'sans-serif'],
+              },
+            }
+          }
+        }
+    </script>
+    <style data-purpose="custom-decorations">
+        .gold-gradient-bg {
+            background: linear-gradient(90deg, #b07c2a 0%, #E5A93B 50%, #b07c2a 100%);
+        }
+        .card-border-gold {
+            border: 1px solid rgba(229, 169, 59, 0.15);
+            background: rgba(25, 15, 30, 0.65);
+            backdrop-filter: blur(12px);
+            transition: all 0.3s ease;
+        }
+        .card-border-gold:hover {
+            border-color: rgba(229, 169, 59, 0.4);
+            transform: translateY(-2px);
+        }
+        .text-gold {
+            color: #E5A93B;
+        }
+        .btn-gold-outline {
+            border: 1.5px solid #E5A93B;
+            color: #E5A93B;
+            transition: all 0.3s ease;
+        }
+        .btn-gold-outline:hover {
+            background-color: #E5A93B;
+            color: #0F0712;
+            box-shadow: 0 0 15px rgba(229, 169, 59, 0.4);
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .bg-honeycomb {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='52' height='90' viewBox='0 0 52 90'%3E%3Cpath fill='none' stroke='%23E5A93B' stroke-opacity='0.04' stroke-width='1.5' d='M0 15L26 0 52 15v30l-26 15-26-15zM26 60v30'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-aline-dark font-sans text-aline-cream selection:bg-aline-gold selection:text-aline-dark overflow-x-hidden bg-honeycomb">
+
+    <!-- Glow Background Orbs -->
+    <div class="absolute top-[10%] left-[-15%] w-[400px] h-[400px] bg-aline-purple opacity-[0.12] rounded-full blur-[150px] pointer-events-none"></div>
+    <div class="absolute top-[45%] right-[-15%] w-[450px] h-[450px] bg-aline-gold opacity-10 rounded-full blur-[160px] pointer-events-none"></div>
+    <div class="absolute bottom-[15%] left-[-10%] w-[380px] h-[380px] bg-aline-purple opacity-[0.12] rounded-full blur-[130px] pointer-events-none"></div>
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 bg-aline-dark/95 border-b border-aline-gold/10 backdrop-blur-md z-40 transition-all duration-300">
+        <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2.5">
+                <img src="logo.png" alt="Logo" class="h-9 w-auto object-contain brightness-95">
+                <span class="font-display font-bold text-sm tracking-widest text-aline-gold hidden sm:inline">ALINE FERRÃO</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-6">
+                <a href="#eventos" class="text-xs font-semibold uppercase tracking-wider text-aline-cream/80 hover:text-aline-gold transition-colors">Eventos</a>
+                <a href="#cursos" class="text-xs font-semibold uppercase tracking-wider text-aline-cream/80 hover:text-aline-gold transition-colors">Mentorias & Cursos</a>
+                <a href="#produtos" class="text-xs font-semibold uppercase tracking-wider text-aline-cream/80 hover:text-aline-gold transition-colors">Produtos</a>
+                <a href="#biografia" class="text-xs font-semibold uppercase tracking-wider text-aline-cream/80 hover:text-aline-gold transition-colors">Sobre Mim</a>
+            </nav>
+
+            <div class="flex items-center gap-3">
+                <a href="index.html" class="px-4 py-2 border border-aline-gold/30 rounded-full text-[10px] font-bold uppercase tracking-wider text-aline-gold hover:bg-aline-gold hover:text-aline-dark transition-all">
+                    Voltar ao Hub
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto px-4 py-12 space-y-24">
+
+        <!-- Intro Section -->
+        <section class="text-center py-6 max-w-2xl mx-auto space-y-4">
+            <h1 class="font-serif text-4xl sm:text-5xl text-aline-gold leading-tight">Vivências & Caminhos de Cura</h1>
+            <p class="font-serif text-lg sm:text-xl text-aline-cream/80 leading-relaxed italic">
+                "O despertar espiritual é o ato de olhar para trás com reverência, e caminhar à frente com autonomia."
+            </p>
+        </section>
+
+        <!-- Events Section -->
+        <section id="eventos" class="space-y-10 scroll-mt-24">
+            <div class="text-center space-y-2">
+                <span class="text-[10px] uppercase tracking-[0.25em] text-aline-gold font-bold font-display">Agenda de Rituais</span>
+                <h2 class="font-display text-2xl sm:text-3xl font-extrabold text-aline-cream uppercase">Eventos & Vivências Ativas</h2>
+                <div class="w-16 h-[2px] bg-aline-gold/40 mx-auto mt-2"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Event 1: Honey Jar -->
+                <div class="card-border-gold rounded-2xl overflow-hidden flex flex-col justify-between h-full">
+                    <div>
+                        <div class="relative h-44 overflow-hidden border-b border-aline-gold/10 bg-gradient-to-tr from-aline-gold/15 to-aline-purple/15">
+                            <img src="fotoprincipal.jpg" class="w-full h-full object-cover opacity-40" alt="Honey Jar">
+                            <div class="absolute top-4 left-4 bg-aline-gold text-aline-dark text-[8px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow">
+                                07 Julho | 19h - 23h
+                            </div>
+                        </div>
+                        <div class="p-5 space-y-3">
+                            <h3 class="font-display text-lg font-bold text-aline-gold">Encontro com a Abelha Rainha 🐝</h3>
+                            <p class="text-xs text-aline-cream/50 uppercase font-semibold tracking-wider">Feitio de Honey Jar</p>
+                            <p class="text-sm text-aline-cream/80 leading-relaxed text-justify">
+                                Vivência dedicada à confecção do Honey Jar (um patuá simbólico de manifestação e atração de abundância através da medicina do mel e sabedoria das abelhas). 
+                            </p>
+                            <p class="text-xs text-aline-gold/90 font-semibold italic">
+                                *Todos os materiais inclusos no encontro. Vagas Limitadas.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0 border-t border-aline-gold/5 mt-4">
+                        <div class="flex items-center justify-between pt-4">
+                            <span class="text-xs text-aline-cream/60">Hub Colmeia Vital</span>
+                            <a href="https://wa.me/5551986261999?text=Ol%C3%A1%20Aline%21%20Estou%20te%20escrevendo%20do%20seu%20Biosite.%20Quero%20garantir%20minha%20participa%C3%A7%C3%A3o%20na%20Viv%C3%AAncia%20da%20Abelha%20Rainha%20no%20dia%2007%2F07." 
+                               target="_blank" rel="noopener" class="px-4 py-2 bg-aline-gold hover:bg-aline-cream text-aline-dark text-[10px] font-bold uppercase tracking-wider rounded-full transition-colors">
+                                Garantir Vaga
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 2: Constelação 9 Julho -->
+                <div class="card-border-gold rounded-2xl overflow-hidden flex flex-col justify-between h-full">
+                    <div>
+                        <div class="relative h-44 overflow-hidden border-b border-aline-gold/10 bg-gradient-to-tr from-aline-gold/15 to-aline-purple/15">
+                            <img src="sobremim.jpg" class="w-full h-full object-cover opacity-40" alt="Constelação">
+                            <div class="absolute top-4 left-4 bg-aline-gold text-aline-dark text-[8px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow">
+                                09 Julho | 19h - 23h
+                            </div>
+                        </div>
+                        <div class="p-5 space-y-3">
+                            <h3 class="font-display text-lg font-bold text-aline-gold">Constelação em Grupo 🌳</h3>
+                            <p class="text-xs text-aline-cream/50 uppercase font-semibold tracking-wider">Círculo de Cura Sistêmica</p>
+                            <p class="text-sm text-aline-cream/80 leading-relaxed text-justify">
+                                Um espaço para olhar com profundo respeito para a sua própria história, reconhecer o seu lugar no sistema familiar e liberar padrões invisíveis de repetição para abrir novos movimentos de amor, cura e prosperidade.
+                            </p>
+                            <p class="text-xs text-aline-gold/90 font-semibold">
+                                *Participação e Constelação: consultar agenda.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0 border-t border-aline-gold/5 mt-4">
+                        <div class="flex items-center justify-between pt-4">
+                            <span class="text-xs text-aline-cream/60">Cachoeirinha/RS</span>
+                            <a href="https://wa.me/5551986261999?text=Ol%C3%A1%20Aline%2C%20estou%20te%20escrevendo%20do%20seu%20Biosite.%20Gostaria%20de%20me%20inscrever%20para%20a%20Constela%C3%A7%C3%A3o%20Familiar%20em%20Grupo%20no%20dia%2009%2F07." 
+                               target="_blank" rel="noopener" class="px-4 py-2 bg-aline-gold hover:bg-aline-cream text-aline-dark text-[10px] font-bold uppercase tracking-wider rounded-full transition-colors">
+                                Participar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 3: Jornada Ancestral 19 Julho -->
+                <div class="card-border-gold rounded-2xl overflow-hidden flex flex-col justify-between h-full">
+                    <div>
+                        <div class="relative h-44 overflow-hidden border-b border-aline-gold/10 bg-gradient-to-tr from-aline-gold/15 to-aline-purple/15">
+                            <img src="fotoprincipal.jpg" class="w-full h-full object-cover opacity-45" alt="Jornada Ancestral">
+                            <div class="absolute top-4 left-4 bg-aline-gold text-aline-dark text-[8px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow">
+                                19 Julho | Dia Inteiro
+                            </div>
+                        </div>
+                        <div class="p-5 space-y-3">
+                            <h3 class="font-display text-lg font-bold text-aline-gold">Jornada: Equilíbrio Sagrado 🌿</h3>
+                            <p class="text-xs text-aline-cream/50 uppercase font-semibold tracking-wider">Medicinas Ancestrais</p>
+                            <p class="text-sm text-aline-cream/80 leading-relaxed text-justify">
+                                Vivência profunda de rezo e conexão por meio da Sagrada Ayahuasca combinada com medicinas tradicionais: Rapé, Sananga, Medicina da Abelha, Cachimbo Sagrado, Aromaterapia e Fitoenergética. Foco no acolhimento do masculino pela Mãe Terra.
+                            </p>
+                            <p class="text-xs text-aline-gold/90 font-semibold italic">
+                                *Condução por Aline Ferrão (Servidora da Luz de Oxum).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0 border-t border-aline-gold/5 mt-4">
+                        <div class="flex items-center justify-between pt-4">
+                            <span class="text-xs text-aline-cream/60">Hub Colmeia Vital</span>
+                            <a href="https://wa.me/5551986261999?text=Ol%C3%A1%20Aline%2C%20estou%20te%20escrevendo%20do%20seu%20Biosite.%20Senti%20o%20chamado%20para%20a%20jornada%20das%20Medicinas%20Ancestrais%20do%20dia%2019%20de%20Julho.%20Como%20posso%20participar%3F" 
+                               target="_blank" rel="noopener" class="px-4 py-2 bg-aline-gold hover:bg-aline-cream text-aline-dark text-[10px] font-bold uppercase tracking-wider rounded-full transition-colors">
+                                Sentir o Chamado
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 4: Adulto Assume Vida 23 Julho -->
+                <div class="card-border-gold rounded-2xl overflow-hidden flex flex-col justify-between h-full">
+                    <div>
+                        <div class="relative h-44 overflow-hidden border-b border-aline-gold/10 bg-gradient-to-tr from-aline-gold/15 to-aline-purple/15">
+                            <img src="evento 🌿 QUANDO O ADULTO ASSUME A VIDAQuantas vezes você percebe que cresceu… mas, diante de algumas s.jpg" class="w-full h-full object-cover opacity-50" alt="Adulto Assume Vida">
+                            <div class="absolute top-4 left-4 bg-aline-gold text-aline-dark text-[8px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow">
+                                23 Julho | 19h30
+                            </div>
+                        </div>
+                        <div class="p-5 space-y-3">
+                            <h3 class="font-display text-lg font-bold text-aline-gold">Quando o Adulto Assume a Vida 🌻</h3>
+                            <p class="text-xs text-aline-cream/50 uppercase font-semibold tracking-wider">Círculo Sistêmico</p>
+                            <p class="text-sm text-aline-cream/80 leading-relaxed text-justify">
+                                Você ainda reage pela criança que espera aprovação e preenchimento? A criança espera, o adulto age e escolhe. Novo campo de Constelação Familiar em grupo para honrar quem veio antes e permitir o adulto seguir adiante.
+                            </p>
+                            <p class="text-xs text-aline-gold/90 font-semibold">
+                                *Participação e Constelação: consultar disponibilidade.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0 border-t border-aline-gold/5 mt-4">
+                        <div class="flex items-center justify-between pt-4">
+                            <span class="text-xs text-aline-cream/60">Hub Colmeia Vital</span>
+                            <a href="https://wa.me/5551986261999?text=Ol%C3%A1%20Aline%21%20Estou%20te%20escrevendo%20do%20seu%20Biosite.%20Quero%20me%20inscrever%20para%20a%20Constela%C3%A7%C3%A3o%20em%20Grupo%20do%20dia%2023%2F07." 
+                               target="_blank" rel="noopener" class="px-4 py-2 bg-aline-gold hover:bg-aline-cream text-aline-dark text-[10px] font-bold uppercase tracking-wider rounded-full transition-colors">
+                                Quero Constelar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 5: Jornada de Inverno 24 Julho -->
+                <div class="card-border-gold rounded-2xl overflow-hidden flex flex-col justify-between h-full">
+                    <div>
+                        <div class="relative h-44 overflow-hidden border-b border-aline-gold/10 bg-gradient-to-tr from-aline-gold/15 to-aline-purple/15">
+                            <img src="sobremim.jpg" class="w-full h-full object-cover opacity-45" alt="Jornada Inverno">
+                            <div class="absolute top-4 left-4 bg-aline-gold text-aline-dark text-[8px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow">
+                                24 Julho | 20h
+                            </div>
+                        </div>
+                        <div class="p-5 space-y-3">
+                            <h3 class="font-display text-lg font-bold text-aline-gold">Jornada de Inverno ❄️</h3>
+                            <p class="text-xs text-aline-cream/50 uppercase font-semibold tracking-wider">Recolher-se para Renascer</p>
+                            <p class="text-sm text-aline-cream/80 leading-relaxed text-justify">
+                                Ritual sagrado de introspecção profunda para acolhimento do coração, desapego de cargas emocionais e recordação da luz interna. Medicina de Ayahuasca, Jurema, Sananga, Rapé e Sopros. 
+                            </p>
+                            <p class="text-xs text-aline-gold/90 font-semibold">
+                                *Música ao vivo: Txana Miguel & Txana Kauã + Banda Sagrado Ser.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0 border-t border-aline-gold/5 mt-4">
+                        <div class="flex items-center justify-between pt-4">
+                            <span class="text-xs text-aline-cream/60">Cachoeirinha/RS</span>
+                            <a href="https://wa.me/5551986261999?text=Ol%C3%A1%20Aline%21%20Estou%20te%20escrevendo%20do%20seu%20Biosite.%20Desejo%20participar%20da%20Cerim%C3%B4nia%20de%20Ayahuasca%20de%20Inverno%20no%20dia%2024%2F07%2F2026." 
+                               target="_blank" rel="noopener" class="px-4 py-2 bg-aline-gold hover:bg-aline-cream text-aline-dark text-[10px] font-bold uppercase tracking-wider rounded-full transition-colors">
+                                Renascer
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 6: Celebração Ancestral 6 Novembro -->
+                <div class="card-border-gold rounded-2xl overflow-hidden flex flex-col justify-between h-full">
+                    <div>
+                        <div class="relative h-44 overflow-hidden border-b border-aline-gold/10 bg-gradient-to-tr from-aline-gold/15 to-aline-purple/15">
+                            <img src="Evento ✨ CELEBRAÇÃO ANCESTRAL ✨É com grande alegria que anunciamos uma noite especial de rezo, música e.jpg" class="w-full h-full object-cover opacity-50" alt="Celebração Ancestral">
+                            <div class="absolute top-4 left-4 bg-aline-gold text-aline-dark text-[8px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow">
+                                06 Novembro | 20h
+                            </div>
+                        </div>
+                        <div class="p-5 space-y-3">
+                            <h3 class="font-display text-lg font-bold text-aline-gold">Celebração Ancestral 🔥</h3>
+                            <p class="text-xs text-aline-cream/50 uppercase font-semibold tracking-wider">Noite de Rezo e Música</p>
+                            <p class="text-sm text-aline-cream/80 leading-relaxed text-justify">
+                                Grande noite especial de celebração, música e conexão profunda com as Sagradas Medicinas da Floresta. Um momento festivo e meditativo para honrar nossos caminhos e origens familiares.
+                            </p>
+                            <p class="text-xs text-aline-gold/90 font-semibold">
+                                *Participação Especial: Banda 4 Direções (em turnê nacional).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0 border-t border-aline-gold/5 mt-4">
+                        <div class="flex items-center justify-between pt-4">
+                            <span class="text-xs text-aline-cream/60">Hub Colmeia Vital</span>
+                            <a href="https://wa.me/5551986261999?text=Ol%C3%A1%20Aline%2C%20estou%20te%20escrevendo%20do%20seu%20Biosite.%20Quero%20reservar%20meu%20lugar%20na%20Celebra%C3%A7%C3%A3o%20Ancestral%20com%20a%20Banda%204%20Dire%C3%A7%C3%B5es%20em%20Novembro%20de%202026." 
+                               target="_blank" rel="noopener" class="px-4 py-2 bg-aline-gold hover:bg-aline-cream text-aline-dark text-[10px] font-bold uppercase tracking-wider rounded-full transition-colors">
+                                Reservar Ingresso
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Mentorias & Cursos Section -->
+        <section id="cursos" class="space-y-10 scroll-mt-24">
+            <div class="text-center space-y-2">
+                <span class="text-[10px] uppercase tracking-[0.25em] text-aline-gold font-bold font-display">Nossos Métodos</span>
+                <h2 class="font-display text-2xl sm:text-3xl font-extrabold text-aline-cream uppercase">Mentorias & Cursos</h2>
+                <div class="w-16 h-[2px] bg-aline-gold/40 mx-auto mt-2"></div>
+            </div>
+
+            <div class="space-y-6">
+
+                <!-- Program 1 -->
+                <div class="card-border-gold rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row gap-6 items-center">
+                    <div class="w-24 h-24 rounded-full overflow-hidden flex-shrink-0 border border-aline-gold/20 shadow-md">
+                        <img src="fotoprincipal.jpg" class="w-full h-full object-cover" alt="Mentoria Individual">
+                    </div>
+                    <div class="space-y-3 flex-1">
+                        <span class="text-[9px] uppercase tracking-widest text-aline-gold font-bold font-display">Acompanhamento</span>
+                        <h3 class="font-display text-xl font-bold text-aline-cream">Mentoria Individual & Escuta Consciente</h3>
+                        <p class="text-sm text-aline-cream/70 leading-relaxed text-justify">
+                            Atendimento clínico individual estruturado para acolher sua dor de forma profunda. Um espaço de escuta sem julgamento para guiar você na direção de resoluções internas, utilizando ferramentas sistêmicas, energéticas e emocionais.
+                        </p>
+                        <a href="https://wa.me/5551986261999?text=Ol%C3%A1%20Aline%21%20Estou%20te%20escrevendo%20do%20seu%20Biosite.%20Gostaria%20de%20entender%20melhor%20a%20sua%20Mentoria%20Individual%20e%20saber%20valores." 
+                           target="_blank" rel="noopener" class="inline-block px-4 py-2 border border-aline-gold text-aline-gold hover:bg-aline-gold hover:text-aline-dark text-[10px] font-bold uppercase tracking-wider rounded-full transition-all">
+                            Agendar Entrevista
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Program 2 -->
+                <div class="card-border-gold rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row gap-6 items-center">
+                    <div class="w-24 h-24 rounded-full overflow-hidden flex-shrink-0 border border-aline-gold/20 shadow-md">
+                        <img src="sobremim.jpg" class="w-full h-full object-cover" alt="Constelação Familiar">
+                    </div>
+                    <div class="space-y-3 flex-1">
+                        <span class="text-[9px] uppercase tracking-widest text-aline-gold font-bold font-display">Abordagem Sistêmica</span>
+                        <h3 class="font-display text-xl font-bold text-aline-cream">Constelação Familiar</h3>
+                        <p class="text-sm text-aline-cream/70 leading-relaxed text-justify">
+                            Sessões individuais (online ou presenciais) voltadas para desembaraçar nós no amor, nas finanças, na carreira ou na saúde. Ao clarear a sua rede de conexões invisíveis, a ordem é restabelecida no sistema.
+                        </p>
+                        <a href="https://wa.me/5551986261999?text=Ol%C3%A1%20Aline%21%20Estou%20te%20escrevendo%20do%20seu%20Biosite.%20Gostaria%20de%20agendar%20uma%20Constela%C3%A7%C3%A3o%20Familiar." 
+                           target="_blank" rel="noopener" class="inline-block px-4 py-2 border border-aline-gold text-aline-gold hover:bg-aline-gold hover:text-aline-dark text-[10px] font-bold uppercase tracking-wider rounded-full transition-all">
+                            Agendar Sessão
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Products Section (Loja Holística) -->
+        <section id="produtos" class="space-y-10 scroll-mt-24">
+            <div class="text-center space-y-2">
+                <span class="text-[10px] uppercase tracking-[0.25em] text-aline-gold font-bold font-display">Alquimias & Medicinas</span>
+                <h2 class="font-display text-2xl sm:text-3xl font-extrabold text-aline-cream uppercase">Loja Holística</h2>
+                <p class="text-center text-xs text-aline-cream/60 max-w-xs mx-auto">Produtos vibracionais selecionados para ancorar sua energia e rituais</p>
+                <div class="w-16 h-[2px] bg-aline-gold/40 mx-auto mt-2"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Product 1 -->
+                <div class="card-border-gold rounded-2xl overflow-hidden flex flex-col justify-between h-full group">
+                    <div>
+                        <div class="relative h-48 overflow-hidden border-b border-aline-gold/10 bg-gradient-to-tr from-aline-gold/10 to-aline-purple/10">
+                            <img src="incenso_salvia.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Incenso de Sálvia Branca">
+                            <div class="absolute top-4 left-4 bg-aline-gold/90 text-aline-dark text-[8px] font-bold uppercase tracking-wider px-2.5 py-1 rounded shadow">
+                                Incensos & Limpeza
+                            </div>
+                        </div>
+                        <div class="p-5 space-y-2">
+                            <h3 class="font-display text-lg font-bold text-aline-cream group-hover:text-aline-gold transition-colors">Incenso de Sálvia Branca</h3>
+                            <p class="text-sm text-aline-cream/70 leading-relaxed text-justify">
+                                Bastão natural de Sálvia Branca para defumação e purificação energética profunda de ambientes e pessoas.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0 mt-2">
+                        <div class="flex items-center justify-center border-t border-aline-gold/10 pt-4">
+                            <a href="https://wa.me/5551986261999?text=Ol%C3%A1%20Aline%21%20Estou%20te%20escrevendo%20do%20seu%20Biosite.%20Gostaria%20de%20adquirir%20o%20Incenso%20de%20S%C3%A1lvia%20Branca." 
+                               target="_blank" rel="noopener" class="bg-aline-gold hover:bg-aline-cream text-aline-dark text-[9px] font-bold uppercase px-8 py-2 rounded-full tracking-wider transition-colors shadow">
+                                Encomendar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="card-border-gold rounded-2xl overflow-hidden flex flex-col justify-between h-full group">
+                    <div>
+                        <div class="relative h-48 overflow-hidden border-b border-aline-gold/10 bg-gradient-to-tr from-aline-gold/10 to-aline-purple/10">
+                            <img src="palo_santo.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Bastão de Palo Santo">
+                            <div class="absolute top-4 left-4 bg-aline-gold/90 text-aline-dark text-[8px] font-bold uppercase tracking-wider px-2.5 py-1 rounded shadow">
+                                Incensos & Limpeza
+                            </div>
+                        </div>
+                        <div class="p-5 space-y-2">
+                            <h3 class="font-display text-lg font-bold text-aline-cream group-hover:text-aline-gold transition-colors">Bastão de Palo Santo</h3>
+                            <p class="text-sm text-aline-cream/70 leading-relaxed text-justify">
+                                Madeira sagrada de Palo Santo in natura (3 unidades). Ideal para atração de boas energias e relaxamento durante a meditação.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0 mt-2">
+                        <div class="flex items-center justify-center border-t border-aline-gold/10 pt-4">
+                            <a href="https://wa.me/5551986261999?text=Ol%C3%A1%20Aline%21%20Estou%20te%20escrevendo%20do%20seu%20Biosite.%20Gostaria%20de%20adquirir%20o%20Bast%C3%A3o%20de%20Palo%20Santo." 
+                               target="_blank" rel="noopener" class="bg-aline-gold hover:bg-aline-cream text-aline-dark text-[9px] font-bold uppercase px-8 py-2 rounded-full tracking-wider transition-colors shadow">
+                                Encomendar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="card-border-gold rounded-2xl overflow-hidden flex flex-col justify-between h-full group">
+                    <div>
+                        <div class="relative h-48 overflow-hidden border-b border-aline-gold/10 bg-gradient-to-tr from-aline-gold/10 to-aline-purple/10">
+                            <img src="sabonete_ervas.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Sabonete de Ervas Fitoenergético">
+                            <div class="absolute top-4 left-4 bg-aline-gold/90 text-aline-dark text-[8px] font-bold uppercase tracking-wider px-2.5 py-1 rounded shadow">
+                                Cosmética Natural
+                            </div>
+                        </div>
+                        <div class="p-5 space-y-2">
+                            <h3 class="font-display text-lg font-bold text-aline-cream group-hover:text-aline-gold transition-colors">Sabonete de Ervas</h3>
+                            <p class="text-sm text-aline-cream/70 leading-relaxed text-justify">
+                                Sabonete artesanal elaborado com base vegetal e extrato fitoenergético de Arruda, Guiné e Alecrim para descarrego energético.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0 mt-2">
+                        <div class="flex items-center justify-center border-t border-aline-gold/10 pt-4">
+                            <a href="https://wa.me/5551986261999?text=Ol%C3%A1%20Aline%21%20Estou%20te%20escrevendo%20do%20seu%20Biosite.%20Gostaria%20de%20adquirir%20o%20Sabonete%20de%20Ervas%20Fitoenerg%C3%A9tico." 
+                               target="_blank" rel="noopener" class="bg-aline-gold hover:bg-aline-cream text-aline-dark text-[9px] font-bold uppercase px-8 py-2 rounded-full tracking-wider transition-colors shadow">
+                                Encomendar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="card-border-gold rounded-2xl overflow-hidden flex flex-col justify-between h-full group">
+                    <div>
+                        <div class="relative h-48 overflow-hidden border-b border-aline-gold/10 bg-gradient-to-tr from-aline-gold/10 to-aline-purple/10">
+                            <img src="sabonete_mel.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Sabonete de Argila & Mel">
+                            <div class="absolute top-4 left-4 bg-aline-gold/90 text-aline-dark text-[8px] font-bold uppercase tracking-wider px-2.5 py-1 rounded shadow">
+                                Cosmética Natural
+                            </div>
+                        </div>
+                        <div class="p-5 space-y-2">
+                            <h3 class="font-display text-lg font-bold text-aline-cream group-hover:text-aline-gold transition-colors">Sabonete de Argila & Mel</h3>
+                            <p class="text-sm text-aline-cream/70 leading-relaxed text-justify">
+                                Sabonete artesanal de Argila Branca e Mel orgânico da colmeia. Propriedades nutritivas, hidratantes e suavizadoras.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0 mt-2">
+                        <div class="flex items-center justify-center border-t border-aline-gold/10 pt-4">
+                            <a href="https://wa.me/5551986261999?text=Ol%C3%A1%20Aline%21%20Estou%20te%20escrevendo%20do%20seu%20Biosite.%20Gostaria%20de%20adquirir%20o%20Sabonete%20de%20Argila%20%26%20Mel." 
+                               target="_blank" rel="noopener" class="bg-aline-gold hover:bg-aline-cream text-aline-dark text-[9px] font-bold uppercase px-8 py-2 rounded-full tracking-wider transition-colors shadow">
+                                Encomendar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="card-border-gold rounded-2xl overflow-hidden flex flex-col justify-between h-full group">
+                    <div>
+                        <div class="relative h-48 overflow-hidden border-b border-aline-gold/10 bg-gradient-to-tr from-aline-gold/10 to-aline-purple/10">
+                            <img src="rape_e_curipe.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Rapé Sagrado Tsunu">
+                            <div class="absolute top-4 left-4 bg-aline-gold/90 text-aline-dark text-[8px] font-bold uppercase tracking-wider px-2.5 py-1 rounded shadow">
+                                Medicinas da Floresta
+                            </div>
+                        </div>
+                        <div class="p-5 space-y-2">
+                            <h3 class="font-display text-lg font-bold text-aline-cream group-hover:text-aline-gold transition-colors">Rapé Sagrado Tsunu</h3>
+                            <p class="text-sm text-aline-cream/70 leading-relaxed text-justify">
+                                Medicina tradicional indígena feita de cinzas da casca da árvore Tsunu e tabaco de alta qualidade. Ideal para foco e aterramento.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0 mt-2">
+                        <div class="flex items-center justify-center border-t border-aline-gold/10 pt-4">
+                            <a href="https://wa.me/5551986261999?text=Ol%C3%A1%20Aline%21%20Estou%20te%20escrevendo%20do%20seu%20Biosite.%20Gostaria%20de%20adquirir%20o%20Rap%C3%A9%20Sagrado%20Tsunu." 
+                               target="_blank" rel="noopener" class="bg-aline-gold hover:bg-aline-cream text-aline-dark text-[9px] font-bold uppercase px-8 py-2 rounded-full tracking-wider transition-colors shadow">
+                                Encomendar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="card-border-gold rounded-2xl overflow-hidden flex flex-col justify-between h-full group">
+                    <div>
+                        <div class="relative h-48 overflow-hidden border-b border-aline-gold/10 bg-gradient-to-tr from-aline-gold/10 to-aline-purple/10">
+                            <img src="rape_e_curipe.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Rapé Sagrado Murici">
+                            <div class="absolute top-4 left-4 bg-aline-gold/90 text-aline-dark text-[8px] font-bold uppercase tracking-wider px-2.5 py-1 rounded shadow">
+                                Medicinas da Floresta
+                            </div>
+                        </div>
+                        <div class="p-5 space-y-2">
+                            <h3 class="font-display text-lg font-bold text-aline-cream group-hover:text-aline-gold transition-colors">Rapé Sagrado Murici</h3>
+                            <p class="text-sm text-aline-cream/70 leading-relaxed text-justify">
+                                Rapé forte feito com cinzas de Murici. Proporciona profunda limpeza de pensamentos obsessivos e reequilíbrio dos canais.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0 mt-2">
+                        <div class="flex items-center justify-center border-t border-aline-gold/10 pt-4">
+                            <a href="https://wa.me/5551986261999?text=Ol%C3%A1%20Aline%21%20Estou%20te%20escrevendo%20do%20seu%20Biosite.%20Gostaria%20de%20adquirir%20o%20Rap%C3%A9%20Sagrado%20Murici." 
+                               target="_blank" rel="noopener" class="bg-aline-gold hover:bg-aline-cream text-aline-dark text-[9px] font-bold uppercase px-8 py-2 rounded-full tracking-wider transition-colors shadow">
+                                Encomendar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="card-border-gold rounded-2xl overflow-hidden flex flex-col justify-between h-full group">
+                    <div>
+                        <div class="relative h-48 overflow-hidden border-b border-aline-gold/10 bg-gradient-to-tr from-aline-gold/10 to-aline-purple/10">
+                            <img src="rape_e_curipe.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Kuripe de Bambu Sagrado">
+                            <div class="absolute top-4 left-4 bg-aline-gold/90 text-aline-dark text-[8px] font-bold uppercase tracking-wider px-2.5 py-1 rounded shadow">
+                                Instrumentos de Poder
+                            </div>
+                        </div>
+                        <div class="p-5 space-y-2">
+                            <h3 class="font-display text-lg font-bold text-aline-cream group-hover:text-aline-gold transition-colors">Kuripe de Bambu Sagrado</h3>
+                            <p class="text-sm text-aline-cream/70 leading-relaxed text-justify">
+                                Aplicador individual de rapé (Kuripe) entalhado à mão em bambu sagrado tratado. Formato anatômico de excelente fluxo.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0 mt-2">
+                        <div class="flex items-center justify-center border-t border-aline-gold/10 pt-4">
+                            <a href="https://wa.me/5551986261999?text=Ol%C3%A1%20Aline%21%20Estou%20te%20escrevendo%20do%20seu%20Biosite.%20Gostaria%20de%20adquirir%20o%20Kuripe%20de%20Bambu%20Sagrado." 
+                               target="_blank" rel="noopener" class="bg-aline-gold hover:bg-aline-cream text-aline-dark text-[9px] font-bold uppercase px-8 py-2 rounded-full tracking-wider transition-colors shadow">
+                                Encomendar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="card-border-gold rounded-2xl overflow-hidden flex flex-col justify-between h-full group">
+                    <div>
+                        <div class="relative h-48 overflow-hidden border-b border-aline-gold/10 bg-gradient-to-tr from-aline-gold/10 to-aline-purple/10">
+                            <img src="kit_cristais.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Pulseira de Proteção (Olho Grego)">
+                            <div class="absolute top-4 left-4 bg-aline-gold/90 text-aline-dark text-[8px] font-bold uppercase tracking-wider px-2.5 py-1 rounded shadow">
+                                Acessórios & Amuletos
+                            </div>
+                        </div>
+                        <div class="p-5 space-y-2">
+                            <h3 class="font-display text-lg font-bold text-aline-cream group-hover:text-aline-gold transition-colors">Pulseira de Olho Grego</h3>
+                            <p class="text-sm text-aline-cream/70 leading-relaxed text-justify">
+                                Pulseira elástica artesanal contendo pedras de Turmalina Negra e olho grego murano de proteção contra inveja e negatividade.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0 mt-2">
+                        <div class="flex items-center justify-center border-t border-aline-gold/10 pt-4">
+                            <a href="https://wa.me/5551986261999?text=Ol%C3%A1%20Aline%21%20Estou%20te%20escrevendo%20do%20seu%20Biosite.%20Gostaria%20de%20adquirir%20a%20Pulseira%20de%20Prote%C3%A7%C3%A3o%20%28Olho%20Grego%29." 
+                               target="_blank" rel="noopener" class="bg-aline-gold hover:bg-aline-cream text-aline-dark text-[9px] font-bold uppercase px-8 py-2 rounded-full tracking-wider transition-colors shadow">
+                                Encomendar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="card-border-gold rounded-2xl overflow-hidden flex flex-col justify-between h-full group">
+                    <div>
+                        <div class="relative h-48 overflow-hidden border-b border-aline-gold/10 bg-gradient-to-tr from-aline-gold/10 to-aline-purple/10">
+                            <img src="chapeu_feltro.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Chapéu de Feltro Shamanic">
+                            <div class="absolute top-4 left-4 bg-aline-gold/90 text-aline-dark text-[8px] font-bold uppercase tracking-wider px-2.5 py-1 rounded shadow">
+                                Acessórios & Vestuário
+                            </div>
+                        </div>
+                        <div class="p-5 space-y-2">
+                            <h3 class="font-display text-lg font-bold text-aline-cream group-hover:text-aline-gold transition-colors">Chapéu Feltro Shamanic</h3>
+                            <p class="text-sm text-aline-cream/70 leading-relaxed text-justify">
+                                Chapéu de feltro prémium adornado com cordão trançado de couro, penas sagradas e pingente de abelha. Edição ritualista.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0 mt-2">
+                        <div class="flex items-center justify-center border-t border-aline-gold/10 pt-4">
+                            <a href="https://wa.me/5551986261999?text=Ol%C3%A1%20Aline%21%20Estou%20te%20escrevendo%20do%20seu%20Biosite.%20Gostaria%20de%20adquirir%20o%20Chap%C3%A9u%20de%20Feltro%20Shamanic." 
+                               target="_blank" rel="noopener" class="bg-aline-gold hover:bg-aline-cream text-aline-dark text-[9px] font-bold uppercase px-8 py-2 rounded-full tracking-wider transition-colors shadow">
+                                Encomendar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 10 -->
+                <div class="card-border-gold rounded-2xl overflow-hidden flex flex-col justify-between h-full group">
+                    <div>
+                        <div class="relative h-48 overflow-hidden border-b border-aline-gold/10 bg-gradient-to-tr from-aline-gold/10 to-aline-purple/10">
+                            <img src="kit_cristais.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Kit 7 Chakras Cristais">
+                            <div class="absolute top-4 left-4 bg-aline-gold/90 text-aline-dark text-[8px] font-bold uppercase tracking-wider px-2.5 py-1 rounded shadow">
+                                Amuletos & Cristais
+                            </div>
+                        </div>
+                        <div class="p-5 space-y-2">
+                            <h3 class="font-display text-lg font-bold text-aline-cream group-hover:text-aline-gold transition-colors">Kit Cristais 7 Chakras</h3>
+                            <p class="text-sm text-aline-cream/70 leading-relaxed text-justify">
+                                Conjunto contendo 7 pedras brutas e naturais selecionadas para harmonização de cada chakra. Acompanha saquinho de algodão.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0 mt-2">
+                        <div class="flex items-center justify-center border-t border-aline-gold/10 pt-4">
+                            <a href="https://wa.me/5551986261999?text=Ol%C3%A1%20Aline%21%20Estou%20te%20escrevendo%20do%20seu%20Biosite.%20Gostaria%20de%20adquirir%20o%20Kit%207%20Chakras." 
+                               target="_blank" rel="noopener" class="bg-aline-gold hover:bg-aline-cream text-aline-dark text-[9px] font-bold uppercase px-8 py-2 rounded-full tracking-wider transition-colors shadow">
+                                Encomendar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About Section (Biography) -->
+        <section id="biografia" class="bg-aline-surface/40 border border-aline-gold/10 rounded-3xl p-6 sm:p-10 scroll-mt-24">
+            <div class="flex flex-col lg:flex-row gap-10 items-center">
+                <div class="w-full max-w-sm aspect-[3/4] overflow-hidden rounded-2xl shadow-xl border border-aline-gold/15">
+                    <img src="sobremim.jpg" alt="Aline Ferrão Biography" class="w-full h-full object-cover">
+                </div>
+                
+                <div class="flex-1 space-y-6">
+                    <div class="space-y-1">
+                        <span class="text-[9px] uppercase tracking-widest text-aline-gold font-bold font-display">A Facilitadora</span>
+                        <h2 class="font-display text-3xl font-extrabold text-aline-cream uppercase">Aline Ferrão</h2>
+                        <div class="w-12 h-[2px] bg-aline-gold/40 mt-1"></div>
+                    </div>
+                    
+                    <div class="font-serif text-lg leading-relaxed text-justify text-aline-cream/80 space-y-4">
+                        <p>
+                            Sou Aline Ferrão, servidora da luz da mãe Oxum, mentora de despertar feminino e facilitadora dedicada às terapias integrativas e medicinas da floresta. 
+                        </p>
+                        <p>
+                            Minha caminhada iniciou-se na busca pessoal por ressignificar minhas próprias dores e feridas sistêmicas. Ao encontrar na Constelação Familiar Familiar e nas medicinas sagradas (Ayahuasca e a sabedoria da medicina das abelhas) meu próprio portal de renascimento, soube que meu chamado era guiar outras pessoas no mesmo caminho de volta à vida.
+                        </p>
+                        <p>
+                            Hoje, no Hub Colmeia Vital em Cachoeirinha/RS, facilito rituais de rezo, partilha e profundas vivências em grupo, criando um espaço de amor e ordem para que homens e mulheres possam viver seu propósito com plenitude.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2.5 pt-4">
+                        <span class="text-[9px] uppercase tracking-wider text-aline-dark bg-aline-gold/90 px-3.5 py-1 rounded-full font-display font-bold shadow-sm">Constelação Familiar</span>
+                        <span class="text-[9px] uppercase tracking-wider text-aline-dark bg-aline-gold/90 px-3.5 py-1 rounded-full font-display font-bold shadow-sm">Medicinas Ancestrais</span>
+                        <span class="text-[9px] uppercase tracking-wider text-aline-dark bg-aline-gold/90 px-3.5 py-1 rounded-full font-display font-bold shadow-sm">Honey Jar Ritualist</span>
+                        <span class="text-[9px] uppercase tracking-wider text-aline-dark bg-aline-gold/90 px-3.5 py-1 rounded-full font-display font-bold shadow-sm">Sagrado Feminino</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 bg-aline-surface text-aline-cream/80 text-center border-t border-aline-gold/10 mt-12">
+        <div class="mb-6 max-h-16 flex justify-center items-center">
+            <img alt="Aline Ferrão Logo" class="h-12 mx-auto object-contain brightness-95 opacity-80" src="logo.png">
+        </div>
+        <p class="text-[10px] uppercase tracking-widest text-aline-gold font-display font-semibold mb-2">Aline Ferrão</p>
+        <p class="text-[9px] uppercase tracking-widest opacity-40">© 2026 Todos os Direitos Reservados</p>
+        <p class="text-[8px] uppercase tracking-widest opacity-25 mt-1 font-mono">MKT SANGÃO Inteligência Digital</p>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast-notif" class="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-aline-gold text-aline-dark px-6 py-3.5 rounded-full shadow-2xl text-xs font-semibold tracking-wider uppercase opacity-0 transition-opacity duration-300 pointer-events-none z-50 border border-aline-dark/30"></div>
+
+    <script>
+        const pixKeyData = '51986261999';
+
+        function showToast(msg) {
+            const toast = document.getElementById('toast-notif');
+            toast.innerText = msg;
+            toast.classList.remove('opacity-0');
+            toast.classList.add('opacity-100');
+            setTimeout(() => {
+                toast.classList.remove('opacity-100');
+                toast.classList.add('opacity-0');
+            }, 2500);
+        }
+
+        function copyPixKey() {
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(pixKeyData).then(() => {
+                    showToast('Chave PIX copiada com sucesso!');
+                }).catch(() => {
+                    fallbackCopy(pixKeyData, 'Chave PIX copiada!');
+                });
+            } else {
+                fallbackCopy(pixKeyData, 'Chave PIX copiada!');
+            }
+        }
+
+        function fallbackCopy(text, message) {
+            const el = document.createElement('textarea');
+            el.value = text;
+            el.style.position = 'fixed';
+            el.style.opacity = '0';
+            document.body.appendChild(el);
+            el.focus();
+            el.select();
+            try {
+                document.execCommand('copy');
+                showToast(message);
+            } catch (err) {
+                console.error('Erro ao copiar', err);
+            }
+            document.body.removeChild(el);
+        }
+    </script>
+</body>
+</html>
