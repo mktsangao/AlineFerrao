@@ -61,6 +61,13 @@
         .bg-honeycomb {
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='52' height='90' viewBox='0 0 52 90'%3E%3Cpath fill='none' stroke='%23E5A93B' stroke-opacity='0.04' stroke-width='1.5' d='M0 15L26 0 52 15v30l-26 15-26-15zM26 60v30'/%3E%3C/svg%3E");
         }
+        @keyframes float-subtle {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-6px); }
+        }
+        .animate-float-subtle {
+            animation: float-subtle 3s ease-in-out infinite;
+        }
     </style>
 </head>
 <body class="bg-aline-dark font-sans text-aline-cream selection:bg-aline-gold selection:text-aline-dark overflow-x-hidden bg-honeycomb">
@@ -720,5 +727,27 @@
             document.body.removeChild(el);
         }
     </script>
+
+    <!-- Floating Action Buttons (FAB) -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3.5 pointer-events-none">
+        <!-- Floating Instagram Button -->
+        <a href="https://instagram.com/alineferrao_terapeuta/" target="_blank" rel="noopener" class="pointer-events-auto w-14 h-14 rounded-full bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] flex items-center justify-center text-white shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300 group relative">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+            <!-- Tooltip -->
+            <span class="absolute right-16 bg-aline-surface border border-aline-gold/30 text-aline-cream text-[10px] uppercase tracking-wider py-1.5 px-3 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-xl whitespace-nowrap">Instagram</span>
+        </a>
+        <!-- Floating WhatsApp Button -->
+        <a href="https://wa.me/5551986261999?text=Ol%C3%A1%20Aline%21%20Estou%20te%20escrevendo%20do%20seu%20site.%20Gostaria%20de%20saber%20mais%20sobre%20as%20suas%20consultas%20e%20viv%C3%AAncias." target="_blank" rel="noopener" class="pointer-events-auto w-14 h-14 rounded-full bg-[#25D366] flex items-center justify-center text-white shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300 group relative animate-float-subtle">
+            <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.1-.173.13-.347.149-.644-.002-.297-.15-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.98 1.0-3.649-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.885m8.413-18.297A11.815 11.815 0 0012.05 1.288c-6.554 0-11.89 5.335-11.893 11.893a11.821 11.821 0 001.573 5.861l-1.67 6.1 6.24-1.637a11.81 11.81 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path>
+            </svg>
+            <!-- Tooltip -->
+            <span class="absolute right-16 bg-aline-surface border border-aline-gold/30 text-aline-cream text-[10px] uppercase tracking-wider py-1.5 px-3 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-xl whitespace-nowrap">Fale Conosco</span>
+        </a>
+    </div>
 </body>
 </html>
